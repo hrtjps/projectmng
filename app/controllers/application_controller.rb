@@ -1,5 +1,7 @@
 class ApplicationController < ActionController::Base
-  def hello
-    
+  def hello  
+  end
+
+  def contact
   end
 end
