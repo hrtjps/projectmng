@@ -25,3 +25,5 @@ production:
   database: projectmng_production
   username: projectmng
   password: <%= ENV['PROJECTMNG_DATABASE_PASSWORD'] %>
+
+  
