@@ -5,6 +5,8 @@ ruby '2.5.3'
 gem 'rails', '~> 5.2.2'
 gem 'bcrypt'
 gem 'faker'
+gem 'carrierwave'
+gem 'mini_magick'
 gem 'will_paginate'
 gem 'bootstrap-will_paginate'
 gem 'bootstrap-sass'
@@ -39,6 +41,10 @@ group :test do
   gem 'selenium-webdriver'
   gem 'chromedriver-helper'
   gem 'rails-controller-testing'
+end
+
+group :production do
+  gem 'fog'
 end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
