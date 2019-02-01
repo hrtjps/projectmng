@@ -1,29 +1,57 @@
-<header class="navbar navbar-fixed-top navbar-inverse">
-  <div class="container">
-    <%= link_to "sample app", root_path, id: "logo" %>
-    <nav>
-      <ul class="nav navbar-nav navbar-right">
-        <li><%= link_to "Home", root_path %></li>
-        <li><%= link_to "Help", help_path %></li>
-        <% if logged_in? %>
-          <li><%= link_to "Users", users_path %></li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              Account <b class="caret"></b>
-            </a>
-            <ul class="dropdown-menu">
-              <li><%= link_to "Profile", current_user %></li>
-              <li><%= link_to "Settings", edit_user_path(current_user) %></li>
-              <li class="divider"></li>
-              <li>
-                <%= link_to "Log out", logout_path, method: :delete %>
-              </li>
-            </ul>
+<!-- Header Section Start -->
+<header id="home" class="hero-area-2">    
+  <div class="overlay"></div>
+  <nav class="navbar navbar-expand-md bg-inverse fixed-top scrolling-navbar">
+    <div class="container">
+      <a href="index.html" class="navbar-brand"><img src="img/logo.png" alt=""></a>  
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="lni-menu"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto w-100 justify-content-end">
+          <li class="nav-item">
+            <a class="nav-link page-scroll" href="#home">Home</a>
           </li>
-        <% else %>
-          <li><%= link_to "Log in", login_path %></li>
-        <% end %>
-      </ul>
-    </nav>
-  </div>
+          <li class="nav-item">
+            <a class="nav-link page-scroll" href="#app-features">Main Stacks</a>
+          </li>  
+          <li class="nav-item">
+            <a class="nav-link page-scroll" href="#screenshots">Screenshots</a>
+          </li>                            
+          <li class="nav-item">
+            <a class="nav-link page-scroll" href="#blog">Recent Apps</a>
+          </li> 
+          <li class="nav-item">
+            <a class="nav-link page-scroll" href="#workshistory">Work Experiences</a>
+          </li>  <%#
+          <li class="nav-item">
+            <a class="nav-link page-scroll" href="#download">Download</a>
+          </li> 
+          <li class="nav-item">
+            <a class="nav-link page-scroll" href="#map-area">Contact</a>
+          </li>  %>
+        </ul>
+      </div>
+    </div>
+  </nav>  
+  <div class="container">      
+    <div class="row space-100">
+      <div class="col-lg-5 col-md-12 col-xs-12">
+        <div class="intro-img">
+          <img src="/img/portfolio/img7.jpg" alt="">
+        </div>            
+      </div>
+      <div class="col-lg-7 col-md-12 col-xs-12">
+        <div class="contents">
+          <h2 class="head-title">Rodrigo Abreu</h2>
+          <h3>FULL STACK WEB APPLICATION DEVELOPER</h3>
+          <%# <div class="header-button">
+            <a href="#" class="btn btn-border-filled">More Detail</a>
+            <a href="#" class="btn btn-border">Contact me</a>
+          </div> %>
+        </div>
+      </div>
+    </div> 
+  </div>             
 </header>
+<!-- Header Section End --> 
